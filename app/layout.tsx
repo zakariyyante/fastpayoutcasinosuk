@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   description: "Find the best fast payout casinos in the UK. Expert reviews, exclusive bonuses, and rapid withdrawals at licensed UKGC sites.",
   icons: {
     icon: [
-      { url: "/favicon.png", sizes: "64x64", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
     ],
     apple: "/favicon.png",
   },
