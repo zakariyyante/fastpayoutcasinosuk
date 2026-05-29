@@ -12,10 +12,7 @@ export const metadata: Metadata = {
   title: "Fast Payout Casinos UK | Best Instant Withdrawal Sites 2026",
   description: "Find the best fast payout casinos in the UK. Expert reviews, exclusive bonuses, and rapid withdrawals at licensed UKGC sites.",
   icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
+    icon: "/favicon.png",
     apple: "/favicon.png",
   },
 };
