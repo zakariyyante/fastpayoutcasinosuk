@@ -27,7 +27,7 @@ export const brands: Brand[] = [
     name: "RollySpin",
     logo: "/brands/rolly.svg",
     bonus: "100% UP TO €600 + 200 FREE SPINS",
-    url: "https://rollyspin19.net/dcdiqugc6?subid=RollySpin-SRJ82-UK&visit_id=",
+    url: "https://rollyspin19.net/dcdiqugc6?subid=RollySpin-UK12ZZ-UK&visit_id=",
     displayUrl: "https://rollyspin.com",
     isMobile: true,
     badge: "FAST WITHDRAWAL",
