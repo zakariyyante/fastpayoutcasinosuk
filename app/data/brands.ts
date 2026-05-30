@@ -13,16 +13,16 @@ export interface Brand {
 
 export const brands: Brand[] = [
   
-  {
-    id: "rollyspin",
-    name: "RollySpin",
-    logo: "/brands/rolly.svg",
-    bonus: "100% UP TO €600 + 200 FS",
-    url: "https://rollyspin19.net/dcdiqugc6?subid=RollySpin-UK12ZZ-UK&visit_id=",
-    displayUrl: "https://rollyspin.com",
-    isMobile: true,
-    badge: "FAST WITHDRAWAL",
-  },
+  // {
+  //   id: "rollyspin",
+  //   name: "RollySpin",
+  //   logo: "/brands/rolly.svg",
+  //   bonus: "100% UP TO €600 + 200 FS",
+  //   url: "https://rollyspin19.net/dcdiqugc6?subid=RollySpin-UK12ZZ-UK&visit_id=",
+  //   displayUrl: "https://rollyspin.com",
+  //   isMobile: true,
+  //   badge: "FAST WITHDRAWAL",
+  // },
   {
     id: "vegashero",
     name: "VegasHero",
