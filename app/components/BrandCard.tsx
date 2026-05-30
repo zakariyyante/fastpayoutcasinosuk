@@ -1,17 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Brand } from "@/app/data/brands";
 import { track } from "@vercel/analytics";
 
 interface BrandCardProps {
   brand: Brand;
   gclid?: string;
-  index: number;
 }
 
-export default function BrandCard({ brand, gclid, index }: BrandCardProps) {
+export default function BrandCard({ brand, gclid }: BrandCardProps) {
   const buildUrl = (url: string, gclidValue?: string) => {
     if (!gclidValue) return url;
     // Affiliate URLs end with an empty trailing param like clickid= or subid=
@@ -31,34 +29,36 @@ export default function BrandCard({ brand, gclid, index }: BrandCardProps) {
   };
 
   return (
-    <div 
-      onClick={handleCardClick}
-      className="casino-card-bg relative group cursor-pointer transition-all duration-300 hover:-translate-y-1 flex flex-col md:flex-row items-center"
+    <a 
+      href={brand.displayUrl}
+      onClick={(e) => {
+        e.preventDefault();
+        handleCardClick();
+      }}
+      className="casino-card-bg relative group cursor-pointer transition-all duration-300 hover:-translate-y-1 flex flex-col md:flex-row items-center no-underline"
     >
-      {/* Ranking Badge */}
+      {/* Rating Badge (Top Left) */}
       <div className="absolute top-0 left-0 bg-teal-500 text-black font-black px-3 py-1 text-xs rounded-br-lg z-10">
-        #{index + 1}
+        {brand.rating.toFixed(1)}
       </div>
 
+      {/* Brand Specific Badge (e.g. TOP PICK) */}
+      {brand.badge && (
+        <div className="absolute top-0 right-0 bg-accent text-white font-black px-3 py-1 text-[8px] rounded-bl-lg z-10 uppercase tracking-widest">
+          {brand.badge}
+        </div>
+      )}
+
       {/* Logo Section */}
-      <div className="p-3 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-white/5 w-full md:w-1/4">
-        <div className="relative w-24 h-12 mb-2">
+      <div className="p-4 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/5 w-full md:w-[30%]">
+        <div className="relative w-44 h-22 transform group-hover:scale-105 transition-transform duration-500">
           <Image 
             src={brand.logo} 
             alt={brand.name} 
             fill 
             className="object-contain"
-            sizes="(max-width: 768px) 96px, 96px"
+            sizes="(max-width: 768px) 176px, 176px"
           />
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-xl font-black text-white mb-0.5">{brand.rating.toFixed(1)}</div>
-          <div className="flex text-teal-400 text-[10px]">
-            {[...Array(5)].map((_, i) => (
-              <span key={i}>★</span>
-            ))}
-          </div>
-          <div className="text-[8px] text-white/30 mt-0.5 uppercase tracking-widest">{brand.votes} VOTES</div>
         </div>
       </div>
 
@@ -80,25 +80,32 @@ export default function BrandCard({ brand, gclid, index }: BrandCardProps) {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="p-4 w-full md:w-1/4 border-t md:border-t-0 md:border-l border-white/5 flex flex-col items-center">
+      {/* Rating & CTA Section */}
+      <div className="p-4 w-full md:w-[25%] border-t md:border-t-0 md:border-l border-white/5 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center mb-4">
+          <div className="flex text-teal-400 text-xs mb-1">
+            {[...Array(5)].map((_, i) => (
+              <span key={i}>★</span>
+            ))}
+          </div>
+          <div className="text-[9px] text-white/30 uppercase tracking-widest">{brand.votes} VOTES</div>
+        </div>
+        
         <button 
-          className="cta-button w-full py-2 text-sm mb-2"
+          className="cta-button w-full py-4 text-lg mb-3"
           onClick={(e) => {
             e.stopPropagation();
             handleCardClick();
           }}
         >
-          Claim Offer
+          Play at {brand.name}
         </button>
-        <Link 
-          href={brand.url} 
-          className="text-[8px] text-white/30 hover:text-white uppercase tracking-[0.2em] transition-colors"
-          onClick={(e) => e.stopPropagation()}
+        <span 
+          className="text-[9px] text-white/30 hover:text-white uppercase tracking-[0.2em] transition-colors"
         >
           Visit Website
-        </Link>
+        </span>
       </div>
-    </div>
+    </a>
   );
 }

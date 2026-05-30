@@ -61,8 +61,8 @@ export default async function Home({
       <section className="pb-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-4 mb-12">
-            {brands.map((brand, index) => (
-              <BrandCard key={brand.id} brand={brand} gclid={gclid} index={index} />
+            {brands.map((brand) => (
+              <BrandCard key={brand.id} brand={brand} gclid={gclid} />
             ))}
           </div>
           

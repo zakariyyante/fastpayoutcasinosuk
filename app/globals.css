@@ -46,7 +46,13 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.1), 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .casino-card-bg:hover {
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.2), 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border-color: rgba(20, 184, 166, 0.3);
   }
 
   .felt-texture {

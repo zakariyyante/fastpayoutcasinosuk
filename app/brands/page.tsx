@@ -15,8 +15,8 @@ export default async function BrandsPage({
         All <span className="text-accent">Top Brands</span>
       </h1>
       <div className="grid grid-cols-1 gap-4">
-        {brands.map((brand, index) => (
-          <BrandCard key={brand.id} brand={brand} gclid={gclid} index={index} />
+        {brands.map((brand) => (
+          <BrandCard key={brand.id} brand={brand} gclid={gclid} />
         ))}
       </div>
     </div>

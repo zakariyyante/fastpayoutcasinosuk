@@ -53,8 +53,8 @@ export default function MobilePopup({ brands }: MobilePopupProps) {
         </div>
 
         <div className="grid grid-cols-1 gap-3 mb-6">
-          {brands.map((brand, index) => (
-            <BrandCard key={brand.id} brand={brand} gclid={gclid || undefined} index={index} />
+          {brands.map((brand) => (
+            <BrandCard key={brand.id} brand={brand} gclid={gclid || undefined} />
           ))}
         </div>
 
