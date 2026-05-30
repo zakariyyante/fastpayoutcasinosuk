@@ -12,16 +12,7 @@ export interface Brand {
 }
 
 export const brands: Brand[] = [
-  {
-    id: "spinpolo",
-    name: "SpinPolo",
-    logo: "/brands/spinpolo.webp",
-    bonus: "400% UP TO £12,750 + 400 FS",
-    url: "https://direct.reradirectbox.com/click?pid=75&offer_id=857&l=1778754174&sub2=SpinPolo-UK12ZZ&sub1=",
-    displayUrl: "https://spinpolo.com",
-    isMobile: true,
-    badge: "TOP PICK",
-  },
+  
   {
     id: "rollyspin",
     name: "RollySpin",
@@ -52,27 +43,17 @@ export const brands: Brand[] = [
     isMobile: true,
     badge: "EXPERT CHOICE",
   },
-  
   {
-    id: "Royalen",
-    name: "Royalen",
-    logo: "/brands/royalen.webp",
-    bonus: "200% up to £2,000 + 200 FS",
-    url: "https://bestcpa.online/click?o=494&a=75&aff_click_id=",
-    displayUrl: "https://royalen.com",
+    id: "spinpolo",
+    name: "SpinPolo",
+    logo: "/brands/spinpolo.webp",
+    bonus: "400% UP TO £12,750 + 400 FS",
+    url: "https://bestcpa.online/click?o=468&a=75&aff_click_id=",
+    displayUrl: "https://spinpolo.com",
     isMobile: true,
-    badge: "RUNNER UP",
+    badge: "TOP PICK",
   },
-  {
-    id: "BetNJet",
-    name: "BetNJet",
-    logo: "/brands/betnjet.svg",
-    bonus: "400% UP TO £1000 + 250 FS",
-    url: "https://bestcpa.online/click?o=436&a=75&aff_click_id=",
-    displayUrl: "https://betnjet.com",
-    isMobile: true,
-    badge: "RUNNER UP",
-  },
+
   {
     id: "bluefox-casino",
     name: "BlueFox Casino",
