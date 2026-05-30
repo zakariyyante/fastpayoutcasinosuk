@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const GA_MEASUREMENT_ID = "AW-18174268717";
-  const CONVERSION_LABEL = "XXXXXXXXXXXX"; // Replace with actual label
+  const CONVERSION_LABEL = "VSMPCOv_4bUcEK2qldpD";
 
   return (
     <html lang="en">
@@ -55,6 +55,8 @@ export default function RootLayout({
               };
               gtag('event', 'conversion', {
                   'send_to': '${GA_MEASUREMENT_ID}/${CONVERSION_LABEL}',
+                  'value': 1.0,
+                  'currency': 'USD',
                   'event_callback': callback
               });
               return false;
