@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // Replace with actual ID
+  const GA_MEASUREMENT_ID = "AW-18174268717";
   const CONVERSION_LABEL = "XXXXXXXXXXXX"; // Replace with actual label
 
   return (

@@ -27,7 +27,7 @@ export const brands: Brand[] = [
     rating: 9.9,
     bonus: "100% UP TO £200 + 20 FREE SPINS",
     url: "https://track-otn.com/trk.php?t=1641&c=2713",
-    isMobile: true,
+    isMobile: false,
     votes: 3654,
   },
 ];

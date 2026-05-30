@@ -41,49 +41,49 @@ export default function BrandCard({ brand, gclid, index }: BrandCardProps) {
       </div>
 
       {/* Logo Section */}
-      <div className="p-6 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-white/5 w-full md:w-1/4">
-        <div className="relative w-32 h-16 mb-4">
+      <div className="p-3 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-white/5 w-full md:w-1/4">
+        <div className="relative w-24 h-12 mb-2">
           <Image 
             src={brand.logo} 
             alt={brand.name} 
             fill 
             className="object-contain"
-            sizes="(max-width: 768px) 128px, 128px"
+            sizes="(max-width: 768px) 96px, 96px"
           />
         </div>
         <div className="flex flex-col items-center">
-          <div className="text-2xl font-black text-white mb-1">{brand.rating.toFixed(1)}</div>
-          <div className="flex text-teal-400 text-sm">
+          <div className="text-xl font-black text-white mb-0.5">{brand.rating.toFixed(1)}</div>
+          <div className="flex text-teal-400 text-[10px]">
             {[...Array(5)].map((_, i) => (
               <span key={i}>★</span>
             ))}
           </div>
-          <div className="text-[9px] text-white/30 mt-1 uppercase tracking-widest">{brand.votes} VOTES</div>
+          <div className="text-[8px] text-white/30 mt-0.5 uppercase tracking-widest">{brand.votes} VOTES</div>
         </div>
       </div>
 
       {/* Bonus Section */}
-      <div className="p-8 flex-grow text-center md:text-left">
-        <div className="text-[10px] text-accent font-black uppercase tracking-[0.2em] mb-2">Exclusive Welcome Bonus</div>
-        <div className="text-xl md:text-2xl font-bold text-white leading-tight">
+      <div className="p-4 flex-grow text-center md:text-left">
+        <div className="text-[8px] text-accent font-black uppercase tracking-[0.2em] mb-1">Exclusive Welcome Bonus</div>
+        <div className="text-lg md:text-xl font-bold text-white leading-tight">
           {brand.bonus}
         </div>
-        <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-4">
-          <div className="flex items-center gap-1.5">
+        <div className="mt-2 flex flex-wrap justify-center md:justify-start gap-3">
+          <div className="flex items-center gap-1">
             <span className="w-1 h-1 rounded-full bg-teal-500"></span>
-            <span className="text-[9px] font-bold text-white/50 uppercase tracking-widest">Instant Payouts</span>
+            <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Instant Payouts</span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1">
             <span className="w-1 h-1 rounded-full bg-teal-500"></span>
-            <span className="text-[9px] font-bold text-white/50 uppercase tracking-widest">UKGC Licensed</span>
+            <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">UKGC Licensed</span>
           </div>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="p-6 w-full md:w-1/4 border-t md:border-t-0 md:border-l border-white/5 flex flex-col items-center">
+      <div className="p-4 w-full md:w-1/4 border-t md:border-t-0 md:border-l border-white/5 flex flex-col items-center">
         <button 
-          className="cta-button w-full mb-3"
+          className="cta-button w-full py-2 text-sm mb-2"
           onClick={(e) => {
             e.stopPropagation();
             handleCardClick();
@@ -93,7 +93,7 @@ export default function BrandCard({ brand, gclid, index }: BrandCardProps) {
         </button>
         <Link 
           href={brand.url} 
-          className="text-[9px] text-white/30 hover:text-white uppercase tracking-[0.2em] transition-colors"
+          className="text-[8px] text-white/30 hover:text-white uppercase tracking-[0.2em] transition-colors"
           onClick={(e) => e.stopPropagation()}
         >
           Visit Website

@@ -31,46 +31,35 @@ export default function MobilePopup({ brands }: MobilePopupProps) {
 
   return (
     <div className="fixed inset-0 z-[100] bg-[#0f051d] overflow-y-auto">
-      <div className="p-4">
-        <div className="flex justify-between items-center mb-6">
+      <div className="p-3">
+        <div className="flex justify-center items-center mb-4">
           <div className="flex items-center gap-2">
             <Image 
               src="/fastlogo.png" 
               alt="Logo" 
-              width={120} 
-              height={40} 
+              width={100} 
+              height={32} 
               className="object-contain" 
             />
-            <span className="text-white font-bold uppercase tracking-tight text-xs">Exclusive Mobile Deals</span>
+            <span className="text-white font-bold uppercase tracking-tight text-[10px]">Exclusive Mobile Deals</span>
           </div>
-          <button 
-            onClick={() => {
-              setIsOpen(false);
-              document.body.style.overflow = "unset";
-            }}
-            className="text-white/60 hover:text-white p-2"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
         </div>
 
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-black text-white mb-2 uppercase italic tracking-tighter">
+        <div className="text-center mb-4">
+          <h2 className="text-xl font-black text-white mb-1 uppercase italic tracking-tighter">
             Fast Payouts <span className="text-accent">Unlocked</span>
           </h2>
-          <p className="text-sm text-white/60">Top-rated UK casinos with rapid withdrawals</p>
+          <p className="text-xs text-white/60">Top-rated UK casinos with rapid withdrawals</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 mb-8">
+        <div className="grid grid-cols-1 gap-3 mb-6">
           {brands.map((brand, index) => (
             <BrandCard key={brand.id} brand={brand} gclid={gclid || undefined} index={index} />
           ))}
         </div>
 
-        <div className="bg-black/20 rounded-xl p-4 text-center">
-          <p className="text-[10px] text-white/30 leading-relaxed uppercase tracking-widest">
+        <div className="bg-black/20 rounded-xl p-3 text-center">
+          <p className="text-[8px] text-white/30 leading-relaxed uppercase tracking-widest">
             18+ | Please Gamble Responsibly | T&Cs Apply
           </p>
         </div>
