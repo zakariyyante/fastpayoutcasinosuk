@@ -24,16 +24,6 @@ export const brands: Brand[] = [
   //   badge: "FAST WITHDRAWAL",
   // },
   {
-    id: "vegashero",
-    name: "VegasHero",
-    logo: "/brands/VegasHero.png",
-    bonus: "125% UP TO £1,250 + 250 FS",
-    url: "https://vgr.lynmonkel.com/?mid=314792_2079715&subid=VegasHero-UK12ZZ&clickid=",
-    displayUrl: "https://vegashero.com",
-    isMobile: true,
-    badge: "EDITOR'S CHOICE",
-  },
-  {
     id: "Bananzia",
     name: "Bananzia",
     logo: "/brands/bananzia.svg",
@@ -43,6 +33,17 @@ export const brands: Brand[] = [
     isMobile: true,
     badge: "EXPERT CHOICE",
   },
+  {
+    id: "vegashero",
+    name: "VegasHero",
+    logo: "/brands/VegasHero.png",
+    bonus: "125% UP TO £1,250 + 250 FS",
+    url: "https://vgr.lynmonkel.com/?mid=314792_2079715&subid=VegasHero-UK12ZZ&clickid=",
+    displayUrl: "https://vegashero.com",
+    isMobile: true,
+    badge: "EDITOR'S CHOICE",
+  },
+  
   {
     id: "spinpolo",
     name: "SpinPolo",
