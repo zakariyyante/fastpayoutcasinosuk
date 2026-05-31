@@ -17,15 +17,16 @@ export default function BrandCard({ brand, gclid }: BrandCardProps) {
   };
 
   const handleCardClick = () => {
+    const targetUrl = buildUrl(brand.url, gclid);
     track("Brand Click", { brand: brand.name });
     
     // Google Ads conversion tracking
-    const win = window as typeof window & { gtag_report_conversion?: () => void };
+    const win = window as typeof window & { gtag_report_conversion?: (url?: string) => void };
     if (typeof window !== "undefined" && win.gtag_report_conversion) {
-      win.gtag_report_conversion();
+      win.gtag_report_conversion(); // Call without URL to prevent redirect in current tab (handled by window.open)
     }
 
-    window.open(buildUrl(brand.url, gclid), "_blank");
+    window.open(targetUrl, "_blank");
   };
 
   return (
