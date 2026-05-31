@@ -31,20 +31,20 @@ export default async function Home({
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-teal-500/10 border-l-2 border-teal-500 mb-8">
-              <span className="text-[10px] font-black text-teal-400 uppercase tracking-[0.2em]">Verified Payout Speeds: 2026</span>
+              <span className="text-[10px] font-black text-teal-400 uppercase tracking-[0.2em]">Latest UK Brand Reviews: 2026</span>
             </div>
 
             <h1 className="text-6xl md:text-9xl font-black text-white leading-[0.85] tracking-tighter uppercase mb-10">
-              THE <span className="teal-text">FASTEST</span><br />
+              TOP 3 <span className="teal-text">NEW</span><br />
               <span className="relative">
-                PAYOUTS
-                <span className="absolute -right-12 top-0 text-[10px] font-mono text-teal-500/40 rotate-90 tracking-widest hidden md:block">LIVE_DATA</span>
+                CASINOS
+                <span className="absolute -right-12 top-0 text-[10px] font-mono text-teal-500/40 rotate-90 tracking-widest hidden md:block">LATEST_DATA</span>
               </span><br />
-              <span className="gold-text">IN THE UK</span>
+              <span className="silver-text">IN THE UK</span>
             </h1>
 
             <p className="text-xl text-white/40 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
-              We don&apos;t just review casinos. We test their withdrawal systems with real money every 24 hours. If they don&apos;t pay out in under 1 hour, they don&apos;t make our top list.
+              We track the newest casino launches in real-time. Our experts test every new brand for security, speed, and fairness. If they don&apos;t rank in our top 3, they don&apos;t get our recommendation.
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -78,7 +78,7 @@ export default async function Home({
               <span className="text-[10px] font-black text-teal-400 uppercase tracking-[0.2em]">Our Methodology</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter italic">
-              HOW WE RATE <span className="gold-text">CASINO</span> SITES
+              HOW WE RATE <span className="silver-text">CASINO</span> SITES
             </h2>
           </div>
 

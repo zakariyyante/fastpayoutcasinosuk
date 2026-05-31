@@ -9,8 +9,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fast Payout Casinos UK | Best Instant Withdrawal Sites 2026",
-  description: "Find the best fast payout casinos in the UK. Expert reviews, exclusive bonuses, and rapid withdrawals at licensed UKGC sites.",
+  title: "Top 3 New Casinos UK | Best New Withdrawal Sites 2026",
+  description: "Find the top 3 new casinos in the UK. Expert reviews, exclusive bonuses, and rapid withdrawals at the latest licensed UKGC sites.",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",

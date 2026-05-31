@@ -13,8 +13,8 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <Image 
-            src="/fastlogo.png" 
-            alt="Fast Payout Casinos UK" 
+            src="/top3logo.png" 
+            alt="Top 3 New Casinos UK" 
             width={200}
             height={45}
             className="object-contain h-auto w-auto max-w-[150px] md:max-w-[200px]"

@@ -11,15 +11,15 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link href="/" className="mb-8">
               <Image 
-                src="/fastlogo.png" 
-                alt="Fast Payout Casinos UK" 
+                src="/top3logo.png" 
+                alt="Top 3 New Casinos UK" 
                 width={240}
                 height={50}
                 className="object-contain"
               />
             </Link>
             <p className="text-xs text-white/30 leading-relaxed uppercase tracking-widest mb-8">
-              The UK&apos;s most trusted source for real-time payout speed data and independent casino reviews.
+              The UK&apos;s most trusted source for the latest casino data and independent new brand reviews.
             </p>
             <div className="flex gap-4">
               {/* Social Placeholders */}
@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <h4 className="text-[10px] font-black text-white uppercase tracking-[0.3em] mb-6">Affiliate Disclosure</h4>
             <p className="text-[10px] text-white/20 leading-relaxed uppercase tracking-widest mb-4">
-              fastpayoutcasinosuk.org is an independent affiliate site owned and operated by Dana Kichler Peretz (HaAtzmaut Street 12, Sderot, 2422209, Israel).
+              top3newcasinosuk.org is an independent affiliate site owned and operated by Dana Kichler Peretz (HaAtzmaut Street 12, Sderot, 2422209, Israel).
             </p>
             <p className="text-[10px] text-white/20 leading-relaxed uppercase tracking-widest">
               We receive commissions from the brands featured on this site. Our reviews are based on objective testing and data. Always check the terms and conditions of any offer before signing up.
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
           <div className="text-center">
             <p className="text-[9px] text-white/20 uppercase tracking-[0.4em]">
-              © {year} fastpayoutcasinosuk.org | All Rights Reserved
+              © {year} top3newcasinosuk.org | All Rights Reserved
             </p>
           </div>
         </div>

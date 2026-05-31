@@ -7,23 +7,23 @@ export default function TermsOfService() {
       
       <div className="prose prose-invert max-w-none text-white/70 leading-relaxed space-y-6">
         <p>
-          Welcome to fastpayoutcasinosuk.org!
+          Welcome to top3newcasinosuk.org!
         </p>
         <p>
-          These terms and conditions outline the rules and regulations for the use of fastpayoutcasinosuk.org&apos;s Website, located at fastpayoutcasinosuk.org. This website is owned and operated by Dana Kichler Peretz (HaAtzmaut Street 12, Sderot, 2422209, Israel).
+          These terms and conditions outline the rules and regulations for the use of top3newcasinosuk.org&apos;s Website, located at top3newcasinosuk.org. This website is owned and operated by Dana Kichler Peretz (HaAtzmaut Street 12, Sderot, 2422209, Israel).
         </p>
         <p>
-          By accessing this website we assume you accept these terms and conditions. Do not continue to use fastpayoutcasinosuk.org if you do not agree to take all of the terms and conditions stated on this page.
+          By accessing this website we assume you accept these terms and conditions. Do not continue to use top3newcasinosuk.org if you do not agree to take all of the terms and conditions stated on this page.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-12 mb-4">License</h2>
         <p>
-          Unless otherwise stated, fastpayoutcasinosuk.org and/or its licensors own the intellectual property rights for all material on fastpayoutcasinosuk.org. All intellectual property rights are reserved. You may access this from fastpayoutcasinosuk.org for your own personal use subjected to restrictions set in these terms and conditions.
+          Unless otherwise stated, top3newcasinosuk.org and/or its licensors own the intellectual property rights for all material on top3newcasinosuk.org. All intellectual property rights are reserved. You may access this from top3newcasinosuk.org for your own personal use subjected to restrictions set in these terms and conditions.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-12 mb-4">User Comments</h2>
         <p>
-          Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. fastpayoutcasinosuk.org does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of fastpayoutcasinosuk.org, its agents and/or affiliates.
+          Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. top3newcasinosuk.org does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of top3newcasinosuk.org, its agents and/or affiliates.
         </p>
 
         <h2 className="text-2xl font-bold text-white mt-12 mb-4">Hyperlinking to our Content</h2>

@@ -17,10 +17,10 @@ export default function AboutUs() {
         <div className="casino-card-bg p-8 border border-white/5">
           <h2 className="text-xl font-bold text-white mb-4 uppercase tracking-tight">Who We Are</h2>
           <p className="text-sm text-white/60 leading-relaxed mb-6">
-            fastpayoutcasinosuk.org is a premier independent review platform owned and operated by Dana Kichler Peretz, based in Sderot, Israel.
+            top3newcasinosuk.org is a premier independent review platform owned and operated by Dana Kichler Peretz, based in Sderot, Israel.
           </p>
           <p className="text-sm text-white/60 leading-relaxed mb-6">
-            Founded by a team of industry experts who were tired of the lack of transparency in the online gambling world, we realized that players value one thing above all else: getting their winnings quickly and safely.
+            Founded by a team of industry experts who were tired of the lack of transparency in the online gambling world, we realized that players value one thing above all else: finding the best new brands quickly and safely.
           </p>
           <p className="text-sm text-white/60 leading-relaxed">
             Our team consists of former casino operators, professional players, and data analysts who work together to provide you with the most accurate and up-to-date information.

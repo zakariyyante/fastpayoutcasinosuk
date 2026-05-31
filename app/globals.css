@@ -23,13 +23,13 @@ body {
 }
 
 @layer components {
-  .gold-text {
+  .silver-text {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to right, #ca8a04, #facc15, #a16207);
+    background-image: linear-gradient(to right, #94a3b8, #f8fafc, #64748b);
     font-weight: 700;
-    filter: drop-shadow(0 0 10px rgba(202, 138, 4, 0.3));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
   }
 
   .teal-text {

@@ -30,12 +30,12 @@ export default function MobilePopup({ brands }: MobilePopupProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] bg-[#0f051d] overflow-y-auto">
+    <div className="fixed inset-0 z-[100] bg-[#050505] overflow-y-auto">
       <div className="p-3">
         <div className="flex justify-center items-center mb-4">
           <div className="flex items-center gap-2">
             <Image 
-              src="/fastlogo.png" 
+              src="/top3logo.png" 
               alt="Logo" 
               width={100} 
               height={32} 
@@ -47,9 +47,9 @@ export default function MobilePopup({ brands }: MobilePopupProps) {
 
         <div className="text-center mb-4">
           <h2 className="text-xl font-black text-white mb-1 uppercase italic tracking-tighter">
-            Fast Payouts <span className="text-accent">Unlocked</span>
+            Top 3 <span className="text-accent">Unlocked</span>
           </h2>
-          <p className="text-xs text-white/60">Top-rated UK casinos with rapid withdrawals</p>
+          <p className="text-xs text-white/60">Top-rated UK casinos with the best offers</p>
         </div>
 
         <div className="grid grid-cols-1 gap-3 mb-6">
